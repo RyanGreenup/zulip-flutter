@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Keep the roots here in sync with lib/internal_ca.dart . -->
+<network-security-config>
+    <base-config>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/vidar_root_ca" />
+            <certificates src="@raw/vale_root_ca" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

@@ -9,6 +9,7 @@ import '../api/core.dart';
 import '../api/notifications.dart';
 import '../api/route/notifications.dart';
 import '../firebase_options.dart';
+import '../internal_ca.dart';
 import '../log.dart';
 import '../model/binding.dart';
 import '../model/push_key.dart';
@@ -210,6 +211,7 @@ class NotificationService {
       debugLogEnabled = true;
       return true;
     }());
+    installInternalCaTrust();
     LiveZulipBinding.ensureInitialized();
     NotificationDisplayManager.init(); // TODO call this just once per isolate
   }

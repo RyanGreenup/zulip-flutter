@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 
+import 'internal_ca.dart';
 import 'licenses.dart';
 import 'log.dart';
 import 'model/binding.dart';
@@ -27,6 +28,7 @@ void mainInit() {
     debugLogEnabled = true;
     return true;
   }());
+  installInternalCaTrust();
   LicenseRegistry.addLicense(additionalLicenses);
   WidgetsFlutterBinding.ensureInitialized();
   LiveZulipBinding.ensureInitialized();
