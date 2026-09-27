@@ -66,3 +66,8 @@ lib/credential_fixture.dart
 /.lima/local.yaml
 .codegraph
 .serena
+.codemap
+
+# APK builds via `just build-apk`
+/dist/
+/.apk-build/
