@@ -64,3 +64,5 @@ lib/credential_fixture.dart
 # Per-developer Lima VM config (references .lima/zulip-flutter.yaml via
 # `base:` and adds the workspace mount). See docs/howto/lima.md for usage.
 /.lima/local.yaml
+.codegraph
+.serena
